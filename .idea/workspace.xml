@@ -1,19 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="" />
+    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/kans_checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pythonproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0,
-  "fromUser": false
-}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000037103841708" />
+      <entry key="MS500" value="1.0832238554627192" />
+      <entry key="S2" value="1.7216769886350671" />
+      <entry key="S5" value="2.289592680202875" />
+      <entry key="S10" value="2.597203031578869" />
+      <entry key="S30" value="2.8533369912328013" />
+      <entry key="S60" value="2.9341977791795957" />
+      <entry key="M2" value="3.1123345685377233" />
+      <entry key="M5" value="4.202826217406282" />
+      <entry key="M10" value="6.586845796308664" />
+      <entry key="M15" value="10.898750557739872" />
+      <entry key="M30" value="33.14791072899431" />
+      <entry key="H1" value="73.75244262156708" />
+      <entry key="H2" value="114.71816187869356" />
+      <entry key="H4" value="144.18601671164248" />
+      <entry key="D1" value="175.02309248788157" />
+      <entry key="W1" value="180.9853763161962" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="6.983507489299103E-251" />
+      <entry key="S2" value="2.8908023614074174E-63" />
+      <entry key="S5" value="9.647335018395067E-26" />
+      <entry key="S10" value="3.106015939816643E-13" />
+      <entry key="S30" value="6.772274609789104E-5" />
+      <entry key="S60" value="0.008229383093397163" />
+      <entry key="M2" value="0.09071594878038114" />
+      <entry key="M5" value="0.38333082452246187" />
+      <entry key="M10" value="0.6550460337909737" />
+      <entry key="M15" value="0.9042679877571448" />
+      <entry key="M30" value="1.8261137575990425" />
+      <entry key="H1" value="3.305389885354076" />
+      <entry key="H2" value="4.728145982373174" />
+      <entry key="H4" value="5.730479624979403" />
+      <entry key="D1" value="6.766923608736023" />
+      <entry key="W1" value="6.966133885699713" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.5946035575013637" />
+      <entry key="MS500" value="0.9030730113300296" />
+      <entry key="S2" value="1.317062523930112" />
+      <entry key="S5" value="1.9761616454066626" />
+      <entry key="S10" value="2.3991863771179043" />
+      <entry key="S30" value="2.775979515617757" />
+      <entry key="S60" value="2.9019465302638863" />
+      <entry key="M2" value="3.181208437846799" />
+      <entry key="M5" value="4.574771418286853" />
+      <entry key="M10" value="7.234487492186276" />
+      <entry key="M15" value="11.796756883478505" />
+      <entry key="M30" value="34.96826542903157" />
+      <entry key="H1" value="77.05285302807044" />
+      <entry key="H2" value="119.44282175657477" />
+      <entry key="H4" value="149.91440548148958" />
+      <entry key="D1" value="181.78960805962188" />
+      <entry key="W1" value="187.95145028111347" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3JoycjOlcpbUK65Ahw75iJCTAjw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,12 +103,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.kans_checker.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "Main",
     "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
     "to.speed.mode.migration.done": "true"
   }
@@ -47,8 +139,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1790341799388</updated>
-      <workItem from="1790341800086" duration="3000" />
+      <workItem from="1790341800086" duration="3603000" />
+      <workItem from="1790434249402" duration="2764000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1790344984411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790438156584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
