@@ -34,6 +34,3 @@ def list_loop (
         if not is_geldige_kans(number):
             return False
     return True
-
-print(list_loop())
-print(output)

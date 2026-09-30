@@ -74,4 +74,3 @@ def dummy_predicter(pr_data):
 
 output = dummy_predicter(pr_data1())
 
-print(output)
