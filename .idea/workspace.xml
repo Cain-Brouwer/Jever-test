@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Add kans_checker.py with validation functions for probability">
+    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Update dummy_predicter.py and kans_checker.py to integrate validation functions and output handling">
+      <change afterPath="$PROJECT_DIR$/pr_runner.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dummy_predicter.py" beforeDir="false" afterPath="$PROJECT_DIR$/dummy_predicter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kans_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/kans_checker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,61 +39,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000355448482907" />
-      <entry key="MS500" value="1.1312163590436557" />
-      <entry key="S2" value="1.819219264060497" />
-      <entry key="S5" value="2.3605166646254734" />
-      <entry key="S10" value="2.6413974875312385" />
-      <entry key="S30" value="2.887873524699435" />
-      <entry key="S60" value="3.330682825372654" />
-      <entry key="M2" value="4.942303435497057" />
-      <entry key="M5" value="8.859151114893553" />
-      <entry key="M10" value="16.015131120247396" />
-      <entry key="M15" value="28.938588529779643" />
-      <entry key="M30" value="92.37515040164087" />
-      <entry key="H1" value="215.39631988623938" />
-      <entry key="H2" value="357.3068545745074" />
-      <entry key="H4" value="472.3238116548169" />
-      <entry key="D1" value="605.1281374023284" />
-      <entry key="W1" value="632.3225160762939" />
+      <entry key="MS100" value="6.490550793946905E-33" />
+      <entry key="MS500" value="8.086097896923387E-7" />
+      <entry key="S2" value="0.0680738612462714" />
+      <entry key="S5" value="0.6596654623726845" />
+      <entry key="S10" value="1.4066922428917825" />
+      <entry key="S30" value="2.3356005767709855" />
+      <entry key="S60" value="2.8816131410488843" />
+      <entry key="M2" value="4.727988840671532" />
+      <entry key="M5" value="11.411987444748803" />
+      <entry key="M10" value="19.40430231721897" />
+      <entry key="M15" value="26.85228928975723" />
+      <entry key="M30" value="64.62345919461468" />
+      <entry key="H1" value="167.56118130147374" />
+      <entry key="H2" value="317.16067097972285" />
+      <entry key="H4" value="454.61046250320493" />
+      <entry key="D1" value="626.837757801073" />
+      <entry key="W1" value="663.624740135749" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="4.445517498970118E-162" />
-      <entry key="MS500" value="5.36518207345657E-33" />
-      <entry key="S2" value="8.558469675459224E-9" />
-      <entry key="S5" value="5.928685958960191E-4" />
-      <entry key="S10" value="0.024348893114390625" />
-      <entry key="S30" value="0.28984094771977464" />
-      <entry key="S60" value="0.5383699860927851" />
-      <entry key="M2" value="0.7352454618505584" />
-      <entry key="M5" value="1.0155729196643515" />
-      <entry key="M10" value="1.8224387120394583" />
-      <entry key="M15" value="2.882977748939225" />
-      <entry key="M30" value="5.7170785854079496" />
-      <entry key="H1" value="9.326137182888951" />
-      <entry key="H2" value="12.971737553366697" />
-      <entry key="H4" value="15.858000907251327" />
-      <entry key="D1" value="19.19537065263224" />
-      <entry key="W1" value="19.881805118057276" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0000000000000293" />
+      <entry key="S30" value="1.0000308479326694" />
+      <entry key="S60" value="1.0055540915264045" />
+      <entry key="M2" value="1.0745269125612809" />
+      <entry key="M5" value="1.3587441221093395" />
+      <entry key="M10" value="1.7203428150623283" />
+      <entry key="M15" value="2.191512592925918" />
+      <entry key="M30" value="4.183896746650153" />
+      <entry key="H1" value="7.8872591963373955" />
+      <entry key="H2" value="12.33629243147062" />
+      <entry key="H4" value="16.163279644624666" />
+      <entry key="D1" value="20.838315456966537" />
+      <entry key="W1" value="21.82857327641154" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8827029962907466" />
-      <entry key="MS500" value="0.9793843023708445" />
-      <entry key="S2" value="1.4159768904713206" />
-      <entry key="S5" value="2.071274040254356" />
-      <entry key="S10" value="2.4866343821221504" />
-      <entry key="S30" value="3.1034541672069724" />
-      <entry key="S60" value="3.8258615618961818" />
-      <entry key="M2" value="5.650237569286065" />
-      <entry key="M5" value="9.858897255413883" />
-      <entry key="M10" value="17.825559705065533" />
-      <entry key="M15" value="31.81046539948609" />
-      <entry key="M30" value="98.08237371473271" />
-      <entry key="H1" value="224.71425393754456" />
-      <entry key="H2" value="370.2725593634312" />
-      <entry key="H4" value="488.17797060756845" />
-      <entry key="D1" value="624.3227018747449" />
-      <entry key="W1" value="652.2042010605902" />
+      <entry key="MS100" value="9.111650307976635E-4" />
+      <entry key="MS500" value="0.2465586641864914" />
+      <entry key="S2" value="0.7604099509855508" />
+      <entry key="S5" value="1.472912968738083" />
+      <entry key="S10" value="2.2757719040067856" />
+      <entry key="S30" value="3.276054635778748" />
+      <entry key="S60" value="3.8516827502982576" />
+      <entry key="M2" value="5.775254319690081" />
+      <entry key="M5" value="12.749258335252442" />
+      <entry key="M10" value="21.108768430693303" />
+      <entry key="M15" value="29.030506371797117" />
+      <entry key="M30" value="68.79674454651185" />
+      <entry key="H1" value="175.4396520994425" />
+      <entry key="H2" value="329.49030007357857" />
+      <entry key="H4" value="470.769369612007" />
+      <entry key="D1" value="647.6751234033001" />
+      <entry key="W1" value="685.4531708887182" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -188,7 +188,7 @@
       <workItem from="1790768498403" duration="409000" />
       <workItem from="1790768910951" duration="704000" />
       <workItem from="1790769634873" duration="75000" />
-      <workItem from="1790769713805" duration="3266000" />
+      <workItem from="1790769713805" duration="4832000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
       <option name="closed" value="true" />
@@ -214,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790769908382</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update dummy_predicter.py and kans_checker.py to integrate validation functions and output handling">
+      <option name="closed" value="true" />
+      <created>1790773450752</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790773450752</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,11 +231,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup for IntelliJ project configuration and added dummy predictor script." />
     <MESSAGE value="Add kans_checker.py with validation functions for probability" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add kans_checker.py with validation functions for probability" />
+    <MESSAGE value="Update dummy_predicter.py and kans_checker.py to integrate validation functions and output handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update dummy_predicter.py and kans_checker.py to integrate validation functions and output handling" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1790344984411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790772886488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790774668542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790771893715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
