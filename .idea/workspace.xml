@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Refactor dummy_predicter.py to enhance data structure and output handling; add pr_runner.py for processing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dummy_predicter.py" beforeDir="false" afterPath="$PROJECT_DIR$/dummy_predicter.py" afterDir="false" />
+    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Refactor dummy_predicter.py and kans_checker.py; add pr_runner.py for processing predictions">
       <change beforePath="$PROJECT_DIR$/kans_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/kans_checker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pr_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/pr_runner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +187,7 @@
       <workItem from="1790768498403" duration="409000" />
       <workItem from="1790768910951" duration="704000" />
       <workItem from="1790769634873" duration="75000" />
-      <workItem from="1790769713805" duration="5828000" />
+      <workItem from="1790769713805" duration="5989000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
       <option name="closed" value="true" />
@@ -232,7 +229,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790775017728</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor dummy_predicter.py and kans_checker.py; add pr_runner.py for processing predictions">
+      <option name="closed" value="true" />
+      <created>1790776064491</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1790776064491</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,11 +248,12 @@
     <MESSAGE value="Add kans_checker.py with validation functions for probability" />
     <MESSAGE value="Update dummy_predicter.py and kans_checker.py to integrate validation functions and output handling" />
     <MESSAGE value="Refactor dummy_predicter.py to enhance data structure and output handling; add pr_runner.py for processing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor dummy_predicter.py to enhance data structure and output handling; add pr_runner.py for processing" />
+    <MESSAGE value="Refactor dummy_predicter.py and kans_checker.py; add pr_runner.py for processing predictions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor dummy_predicter.py and kans_checker.py; add pr_runner.py for processing predictions" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1790344984411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790775945006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790775984489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790774668542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790771893715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
