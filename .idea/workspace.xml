@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Refactor dummy_predicter.py to enhance data structure and output handling; add pr_runner.py for processing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dummy_predicter.py" beforeDir="false" afterPath="$PROJECT_DIR$/dummy_predicter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kans_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/kans_checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pr_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/pr_runner.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="5" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="kans_checker_script" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="5.312442183138822E-43" />
+      <entry key="MS500" value="6.1165734189258824E-9" />
+      <entry key="S2" value="0.019601205251293944" />
+      <entry key="S5" value="0.4001057326750663" />
+      <entry key="S10" value="1.1134621193870766" />
+      <entry key="S30" value="5.641019340285812" />
+      <entry key="S60" value="15.738163115280084" />
+      <entry key="M2" value="30.368272471259193" />
+      <entry key="M5" value="55.95723229192242" />
+      <entry key="M10" value="78.39220455755506" />
+      <entry key="M15" value="92.6426223359697" />
+      <entry key="M30" value="132.15017881772673" />
+      <entry key="H1" value="228.92768791949115" />
+      <entry key="H2" value="381.51703269698976" />
+      <entry key="H4" value="530.860009374476" />
+      <entry key="D1" value="726.6955634543697" />
+      <entry key="W1" value="769.5420926436786" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.000000002672387" />
+      <entry key="S30" value="1.0023672396927996" />
+      <entry key="S60" value="1.0913655416934878" />
+      <entry key="M2" value="1.6757044689557574" />
+      <entry key="M5" value="3.654987923651115" />
+      <entry key="M10" value="5.574340978350602" />
+      <entry key="M15" value="6.747924675158302" />
+      <entry key="M30" value="9.369823759263179" />
+      <entry key="H1" value="13.484750372667294" />
+      <entry key="H2" value="18.519112726949842" />
+      <entry key="H4" value="22.983942715776834" />
+      <entry key="D1" value="28.585724880887636" />
+      <entry key="W1" value="29.790777916782112" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="3.026630126804164E-4" />
+      <entry key="MS500" value="0.1977843286840742" />
+      <entry key="S2" value="0.6838089962553723" />
+      <entry key="S5" value="1.2276778257994296" />
+      <entry key="S10" value="2.003907068996537" />
+      <entry key="S30" value="6.5952274117012175" />
+      <entry key="S60" value="16.800845588271955" />
+      <entry key="M2" value="32.019818405272176" />
+      <entry key="M5" value="59.583974832581816" />
+      <entry key="M10" value="83.9403646895775" />
+      <entry key="M15" value="99.36747281153599" />
+      <entry key="M30" value="141.50252851727112" />
+      <entry key="H1" value="242.39949038349127" />
+      <entry key="H2" value="400.027045910546" />
+      <entry key="H4" value="553.8381869010116" />
+      <entry key="D1" value="755.2800642829611" />
+      <entry key="W1" value="799.3326874585974" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JoycjOlcpbUK65Ahw75iJCTAjw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.dummy_predicter.executor": "Run",
+    "Python.kans_checker.executor": "Run",
+    "Python.pr_runner.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "dummy__predicter",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="dummy_predicter" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="PythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.14" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dummy_predicter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-PY-262.10968.92" />
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="" />
+      <created>1790341799388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1790341799388</updated>
+      <workItem from="1790341800086" duration="3603000" />
+      <workItem from="1790434249402" duration="5063000" />
+      <workItem from="1790459326670" duration="529000" />
+      <workItem from="1790459858938" duration="17000" />
+      <workItem from="1790584675744" duration="1330000" />
+      <workItem from="1790597466873" duration="634000" />
+      <workItem from="1790766105946" duration="865000" />
+      <workItem from="1790766974730" duration="1118000" />
+      <workItem from="1790768498403" duration="409000" />
+      <workItem from="1790768910951" duration="704000" />
+      <workItem from="1790769634873" duration="75000" />
+      <workItem from="1790769713805" duration="5828000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
+      <option name="closed" value="true" />
+      <created>1790769605555</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790769605555</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
+      <option name="closed" value="true" />
+      <created>1790769852600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790769852600</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add kans_checker.py with validation functions for probability">
+      <option name="closed" value="true" />
+      <created>1790769908382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790769908382</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update dummy_predicter.py and kans_checker.py to integrate validation functions and output handling">
+      <option name="closed" value="true" />
+      <created>1790773450752</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1790773450752</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactor dummy_predicter.py to enhance data structure and output handling; add pr_runner.py for processing">
+      <option name="closed" value="true" />
+      <created>1790775017728</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1790775017728</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial setup for IntelliJ project configuration and added dummy predictor script." />
+    <MESSAGE value="Add kans_checker.py with validation functions for probability" />
+    <MESSAGE value="Update dummy_predicter.py and kans_checker.py to integrate validation functions and output handling" />
+    <MESSAGE value="Refactor dummy_predicter.py to enhance data structure and output handling; add pr_runner.py for processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor dummy_predicter.py to enhance data structure and output handling; add pr_runner.py for processing" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1790344984411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790775945006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790774668542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790771893715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
