@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Initial setup for IntelliJ project configuration and added dummy predictor script.">
+    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Add kans_checker.py with validation functions for probability">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dummy_predicter.py" beforeDir="false" afterPath="$PROJECT_DIR$/dummy_predicter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kans_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/kans_checker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="5" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -36,61 +39,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.7185705094460972E-11" />
-      <entry key="MS500" value="0.007058541235031001" />
-      <entry key="S2" value="0.3618411625353684" />
-      <entry key="S5" value="0.9587262864502988" />
-      <entry key="S10" value="1.3721265315061322" />
-      <entry key="S30" value="1.912370218082059" />
-      <entry key="S60" value="2.5887031179824125" />
-      <entry key="M2" value="3.867067184369237" />
-      <entry key="M5" value="8.571755697672694" />
-      <entry key="M10" value="32.53124998201595" />
-      <entry key="M15" value="68.87107373865244" />
-      <entry key="M30" value="168.55307181959554" />
-      <entry key="H1" value="290.3866222078463" />
-      <entry key="H2" value="401.7101732830783" />
-      <entry key="H4" value="482.02448591912514" />
-      <entry key="D1" value="568.1369003786432" />
-      <entry key="W1" value="585.1019251491704" />
+      <entry key="MS100" value="1.0000355448482907" />
+      <entry key="MS500" value="1.1312163590436557" />
+      <entry key="S2" value="1.819219264060497" />
+      <entry key="S5" value="2.3605166646254734" />
+      <entry key="S10" value="2.6413974875312385" />
+      <entry key="S30" value="2.887873524699435" />
+      <entry key="S60" value="3.330682825372654" />
+      <entry key="M2" value="4.942303435497057" />
+      <entry key="M5" value="8.859151114893553" />
+      <entry key="M10" value="16.015131120247396" />
+      <entry key="M15" value="28.938588529779643" />
+      <entry key="M30" value="92.37515040164087" />
+      <entry key="H1" value="215.39631988623938" />
+      <entry key="H2" value="357.3068545745074" />
+      <entry key="H4" value="472.3238116548169" />
+      <entry key="D1" value="605.1281374023284" />
+      <entry key="W1" value="632.3225160762939" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0000000000241682" />
-      <entry key="S30" value="1.0002921763475912" />
-      <entry key="S60" value="1.0199925550184044" />
-      <entry key="M2" value="1.2247842820167973" />
-      <entry key="M5" value="2.20002136331813" />
-      <entry key="M10" value="3.2543217584728183" />
-      <entry key="M15" value="3.8943704228703804" />
-      <entry key="M30" value="5.156283793947265" />
-      <entry key="H1" value="6.94934677956132" />
-      <entry key="H2" value="8.987132351830503" />
-      <entry key="H4" value="10.64257202961716" />
-      <entry key="D1" value="12.545634442714443" />
-      <entry key="W1" value="12.933384291757049" />
+      <entry key="MS100" value="4.445517498970118E-162" />
+      <entry key="MS500" value="5.36518207345657E-33" />
+      <entry key="S2" value="8.558469675459224E-9" />
+      <entry key="S5" value="5.928685958960191E-4" />
+      <entry key="S10" value="0.024348893114390625" />
+      <entry key="S30" value="0.28984094771977464" />
+      <entry key="S60" value="0.5383699860927851" />
+      <entry key="M2" value="0.7352454618505584" />
+      <entry key="M5" value="1.0155729196643515" />
+      <entry key="M10" value="1.8224387120394583" />
+      <entry key="M15" value="2.882977748939225" />
+      <entry key="M30" value="5.7170785854079496" />
+      <entry key="H1" value="9.326137182888951" />
+      <entry key="H2" value="12.971737553366697" />
+      <entry key="H4" value="15.858000907251327" />
+      <entry key="D1" value="19.19537065263224" />
+      <entry key="W1" value="19.881805118057276" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="9.590251033353723E-6" />
-      <entry key="MS500" value="0.10150484603909526" />
-      <entry key="S2" value="0.8399024119292143" />
-      <entry key="S5" value="1.6616339794548047" />
-      <entry key="S10" value="2.1977322370418007" />
-      <entry key="S30" value="2.8449361513668023" />
-      <entry key="S60" value="3.5696640892780094" />
-      <entry key="M2" value="5.06573951486064" />
-      <entry key="M5" value="10.753122549884054" />
-      <entry key="M10" value="35.77189547083192" />
-      <entry key="M15" value="72.7542073427107" />
-      <entry key="M30" value="173.70098326618617" />
-      <entry key="H1" value="297.32942059153356" />
-      <entry key="H2" value="410.69262892962416" />
-      <entry key="H4" value="492.6641458049606" />
-      <entry key="D1" value="580.6819394885789" />
-      <entry key="W1" value="598.0352211946364" />
+      <entry key="MS100" value="0.8827029962907466" />
+      <entry key="MS500" value="0.9793843023708445" />
+      <entry key="S2" value="1.4159768904713206" />
+      <entry key="S5" value="2.071274040254356" />
+      <entry key="S10" value="2.4866343821221504" />
+      <entry key="S30" value="3.1034541672069724" />
+      <entry key="S60" value="3.8258615618961818" />
+      <entry key="M2" value="5.650237569286065" />
+      <entry key="M5" value="9.858897255413883" />
+      <entry key="M10" value="17.825559705065533" />
+      <entry key="M15" value="31.81046539948609" />
+      <entry key="M30" value="98.08237371473271" />
+      <entry key="H1" value="224.71425393754456" />
+      <entry key="H2" value="370.2725593634312" />
+      <entry key="H4" value="488.17797060756845" />
+      <entry key="D1" value="624.3227018747449" />
+      <entry key="W1" value="652.2042010605902" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -185,6 +188,7 @@
       <workItem from="1790768498403" duration="409000" />
       <workItem from="1790768910951" duration="704000" />
       <workItem from="1790769634873" duration="75000" />
+      <workItem from="1790769713805" duration="3266000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
       <option name="closed" value="true" />
@@ -194,7 +198,23 @@
       <option name="project" value="LOCAL" />
       <updated>1790769605555</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
+      <option name="closed" value="true" />
+      <created>1790769852600</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790769852600</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add kans_checker.py with validation functions for probability">
+      <option name="closed" value="true" />
+      <created>1790769908382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790769908382</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,11 +222,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup for IntelliJ project configuration and added dummy predictor script." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial setup for IntelliJ project configuration and added dummy predictor script." />
+    <MESSAGE value="Add kans_checker.py with validation functions for probability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add kans_checker.py with validation functions for probability" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1790344984411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790769534851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790459865768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790772886488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790771893715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
