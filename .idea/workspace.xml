@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Update dummy_predicter.py to include pr_data4 in predictions">
+    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Add pr_data5 and pr_data6 functions to pr_data.py; include code diffs and commit history">
+      <change afterPath="$PROJECT_DIR$/_Archive/dummy_predicter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dummy_predicter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kans_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/kans_checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pr_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pr_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pr_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/pr_runner.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,61 +43,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0384667029873422" />
-      <entry key="MS500" value="1.8619856155628867" />
-      <entry key="S2" value="3.1281384254515396" />
-      <entry key="S5" value="3.816174258862612" />
-      <entry key="S10" value="4.364860414623676" />
-      <entry key="S30" value="5.924018061422272" />
-      <entry key="S60" value="7.701080478662365" />
-      <entry key="M2" value="10.63029497646287" />
-      <entry key="M5" value="17.752316990572652" />
-      <entry key="M10" value="24.43786778782695" />
-      <entry key="M15" value="29.782548552187656" />
-      <entry key="M30" value="51.90159508782055" />
-      <entry key="H1" value="101.41846102735306" />
-      <entry key="H2" value="162.9353177869272" />
-      <entry key="H4" value="227.1402375248166" />
-      <entry key="D1" value="676.5705759992486" />
-      <entry key="W1" value="1004.2394546227525" />
+      <entry key="MS100" value="2.0570098812490847" />
+      <entry key="MS500" value="3.895770044505492" />
+      <entry key="S2" value="4.71876195463035" />
+      <entry key="S5" value="5.501411345726554" />
+      <entry key="S10" value="6.525824853019736" />
+      <entry key="S30" value="8.02760343999871" />
+      <entry key="S60" value="9.106419193724177" />
+      <entry key="M2" value="11.529451467090956" />
+      <entry key="M5" value="21.65756487559933" />
+      <entry key="M10" value="37.694139485238686" />
+      <entry key="M15" value="50.295588292011246" />
+      <entry key="M30" value="80.59360233958563" />
+      <entry key="H1" value="134.17803274011698" />
+      <entry key="H2" value="203.84249858674838" />
+      <entry key="H4" value="277.32130151060636" />
+      <entry key="D1" value="737.7243527419148" />
+      <entry key="W1" value="1073.1686361777888" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="3.971739333675528E-31" />
-      <entry key="MS500" value="8.332028207150086E-7" />
-      <entry key="S2" value="0.03673594480231603" />
-      <entry key="S5" value="0.3803302886168379" />
-      <entry key="S10" value="0.8653016396486637" />
-      <entry key="S30" value="1.7734482534054719" />
-      <entry key="S60" value="2.728108269220949" />
-      <entry key="M2" value="3.9556221064203396" />
-      <entry key="M5" value="5.590767501896048" />
-      <entry key="M10" value="6.70526034841448" />
-      <entry key="M15" value="7.687052348001608" />
-      <entry key="M30" value="11.734654355744954" />
-      <entry key="H1" value="19.897735517543037" />
-      <entry key="H2" value="29.520779888517716" />
-      <entry key="H4" value="37.92567985326167" />
-      <entry key="D1" value="63.73086238845966" />
-      <entry key="W1" value="78.69088263533054" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="9.788653717038994E-68" />
+      <entry key="S2" value="1.7688081934208902E-17" />
+      <entry key="S5" value="1.9910795009736005E-7" />
+      <entry key="S10" value="4.499576711750082E-4" />
+      <entry key="S30" value="0.10265150835169154" />
+      <entry key="S60" value="0.5394950151965662" />
+      <entry key="M2" value="1.3965045250801622" />
+      <entry key="M5" value="2.809892619505275" />
+      <entry key="M10" value="4.781849512496614" />
+      <entry key="M15" value="6.675551438326041" />
+      <entry key="M30" value="11.906650687246218" />
+      <entry key="H1" value="21.033974170932776" />
+      <entry key="H2" value="32.31980486614193" />
+      <entry key="H4" value="42.539987151454575" />
+      <entry key="D1" value="70.78755718372051" />
+      <entry key="W1" value="86.52537676351757" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.042390456522684944" />
-      <entry key="MS500" value="0.9029314703485227" />
-      <entry key="S2" value="2.433779900567486" />
-      <entry key="S5" value="3.692358010286766" />
-      <entry key="S10" value="4.866506135860428" />
-      <entry key="S30" value="7.492974548647958" />
-      <entry key="S60" value="10.275138147405837" />
-      <entry key="M2" value="14.470286421231037" />
-      <entry key="M5" value="23.27124796089215" />
-      <entry key="M10" value="31.09787876215251" />
-      <entry key="M15" value="37.43511503013282" />
-      <entry key="M30" value="63.61193538898852" />
-      <entry key="H1" value="121.29732739935653" />
-      <entry key="H2" value="192.4427252629707" />
-      <entry key="H4" value="265.05748285418474" />
-      <entry key="D1" value="740.2990195896593" />
-      <entry key="W1" value="1082.9299032972335" />
+      <entry key="MS100" value="1.9213691991895643" />
+      <entry key="MS500" value="3.8415987383257155" />
+      <entry key="S2" value="4.7021848292775825" />
+      <entry key="S5" value="5.4938374057991295" />
+      <entry key="S10" value="6.521863924459592" />
+      <entry key="S30" value="8.124039947275895" />
+      <entry key="S60" value="9.63039615106347" />
+      <entry key="M2" value="12.90282188642983" />
+      <entry key="M5" value="24.438753224640443" />
+      <entry key="M10" value="42.44327849091997" />
+      <entry key="M15" value="56.938459380449906" />
+      <entry key="M30" value="92.47148241981415" />
+      <entry key="H1" value="155.18878082516113" />
+      <entry key="H2" value="236.14566370802206" />
+      <entry key="H4" value="319.8507390848832" />
+      <entry key="D1" value="808.5090403298248" />
+      <entry key="W1" value="1159.6935101701524" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -107,34 +112,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.dummy_predicter.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.feature_extractor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.kans_checker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pr_runner.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.dummy_predicter.executor": "Debug",
+    "Python.feature_extractor.executor": "Run",
+    "Python.kans_checker.executor": "Run",
+    "Python.pr_runner.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/cainbrouwer/PycharmProjects/PythonProject/_Archive",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_Archive" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="pythonproject" />
@@ -353,7 +364,7 @@
       <workItem from="1790769634873" duration="75000" />
       <workItem from="1790769713805" duration="16193000" />
       <workItem from="1790844259975" duration="19000" />
-      <workItem from="1790844281801" duration="5709000" />
+      <workItem from="1790844281801" duration="7983000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
       <option name="closed" value="true" />
@@ -467,11 +478,38 @@
       <option name="project" value="LOCAL" />
       <updated>1790848591754</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add classification function to pr_runner.py; update output handling and feature comparison">
+      <option name="closed" value="true" />
+      <created>1790852041591</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1790852041591</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add pr_data5 and pr_data6 functions to pr_data.py; include code diffs and commit history">
+      <option name="closed" value="true" />
+      <created>1790852061343</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1790852061343</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial setup for IntelliJ project configuration and added dummy predictor script." />
@@ -487,12 +525,14 @@
     <MESSAGE value="Refactor pr_runner.py to integrate LogisticRegression model for predictions; update feature extraction and output handling" />
     <MESSAGE value="Add pr_data3 and pr_data4 functions to pr_data.py; update pr_runner.py to utilize new data structures for predictions" />
     <MESSAGE value="Update dummy_predicter.py to include pr_data4 in predictions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update dummy_predicter.py to include pr_data4 in predictions" />
+    <MESSAGE value="Add classification function to pr_runner.py; update output handling and feature comparison" />
+    <MESSAGE value="Add pr_data5 and pr_data6 functions to pr_data.py; include code diffs and commit history" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add pr_data5 and pr_data6 functions to pr_data.py; include code diffs and commit history" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject$feature_extractor.coverage" NAME="feature_extractor Coverage Results" MODIFIED="1790843701193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1790344984411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790848710893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790852784462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790843538391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790771893715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

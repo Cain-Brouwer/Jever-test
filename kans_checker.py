@@ -1,6 +1,6 @@
 from typing import Any
 
-from dummy_predicter import output
+from _Archive.dummy_predicter import output
 
 
 def is_geldige_kans(
