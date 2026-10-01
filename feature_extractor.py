@@ -4,10 +4,10 @@ def extract_features(pr_data):
     added_lines = 0
     removed_lines = 0
     for diffs in code_diffs:
-        if diffs.startswith('+') and not diffs.startswith('+++'):
+        if diffs.lstrip().startswith('+') and not diffs.lstrip().startswith('+++'):
             added_lines += 1
             print(f"Added line: {diffs[1:]}")
-        elif diffs.startswith('-') and not diffs.startswith('---'):
+        elif diffs.lstrip().startswith('-') and not diffs.lstrip().startswith('---'):
             removed_lines += 1
             print(f"Removed line: {diffs[1:]}")
     return added_lines, removed_lines

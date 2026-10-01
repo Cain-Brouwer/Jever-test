@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Add pr_id fields to data functions in pr_data.py for better tracking of pull requests">
-      <change beforePath="$PROJECT_DIR$/pr_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/pr_runner.py" afterDir="false" />
+    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Refactor pr_runner.py to integrate model training and testing; simplify feature extraction in feature_extractor.py">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_extractor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pr_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/pr_tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,61 +39,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="5.455503603868269E-4" />
-      <entry key="MS500" value="0.22276654407927726" />
-      <entry key="S2" value="0.8488806746213551" />
-      <entry key="S5" value="1.8144340665614394" />
-      <entry key="S10" value="3.2612195952882077" />
-      <entry key="S30" value="6.056446122938979" />
-      <entry key="S60" value="7.617871583773563" />
-      <entry key="M2" value="10.187104766682399" />
-      <entry key="M5" value="18.55381499824102" />
-      <entry key="M10" value="28.879941923833904" />
-      <entry key="M15" value="35.94369580771579" />
-      <entry key="M30" value="55.072968744967916" />
-      <entry key="H1" value="100.03759033713563" />
-      <entry key="H2" value="179.2762008337623" />
-      <entry key="H4" value="275.7666331550325" />
-      <entry key="D1" value="772.6407968643916" />
-      <entry key="W1" value="1134.2097494857849" />
+      <entry key="MS100" value="1.00018374594085" />
+      <entry key="MS500" value="1.1803117504400509" />
+      <entry key="S2" value="1.8408975481249437" />
+      <entry key="S5" value="2.3570966498843173" />
+      <entry key="S10" value="2.6420569388786497" />
+      <entry key="S30" value="3.1666734285812015" />
+      <entry key="S60" value="3.7348769466891096" />
+      <entry key="M2" value="4.592069187774991" />
+      <entry key="M5" value="9.22065020057923" />
+      <entry key="M10" value="20.06910814101857" />
+      <entry key="M15" value="29.697609618635827" />
+      <entry key="M30" value="53.35261209015077" />
+      <entry key="H1" value="100.14747682165832" />
+      <entry key="H2" value="181.44948719704058" />
+      <entry key="H4" value="282.01787533333584" />
+      <entry key="D1" value="786.2561879802688" />
+      <entry key="W1" value="1152.8723437260492" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000325173" />
-      <entry key="MS500" value="1.0079972965478885" />
-      <entry key="S2" value="1.3645925394059524" />
-      <entry key="S5" value="2.107326969560254" />
-      <entry key="S10" value="2.8755197449738352" />
-      <entry key="S30" value="3.9908582436656106" />
-      <entry key="S60" value="4.439363722824259" />
-      <entry key="M2" value="4.729223012796654" />
-      <entry key="M5" value="5.316572892676038" />
-      <entry key="M10" value="6.259521187257946" />
-      <entry key="M15" value="7.048007126769997" />
-      <entry key="M30" value="9.600219252679084" />
-      <entry key="H1" value="16.460250941714932" />
-      <entry key="H2" value="28.90648426775974" />
-      <entry key="H4" value="42.99080859206579" />
-      <entry key="D1" value="78.59257977967447" />
-      <entry key="W1" value="96.95974530454431" />
+      <entry key="MS100" value="4.107606551220515E-274" />
+      <entry key="MS500" value="2.1024117136367575E-55" />
+      <entry key="S2" value="2.141309490755837E-14" />
+      <entry key="S5" value="3.4062128010658016E-6" />
+      <entry key="S10" value="0.001845592810020449" />
+      <entry key="S30" value="0.12283623830079086" />
+      <entry key="S60" value="0.36367483853770427" />
+      <entry key="M2" value="0.7408372551910605" />
+      <entry key="M5" value="2.0585768871695187" />
+      <entry key="M10" value="4.279997195683184" />
+      <entry key="M15" value="5.984567376000686" />
+      <entry key="M30" value="9.789977873210702" />
+      <entry key="H1" value="17.157734973323173" />
+      <entry key="H2" value="30.01398133994076" />
+      <entry key="H4" value="44.8355105150995" />
+      <entry key="D1" value="81.93615253727818" />
+      <entry key="W1" value="100.84420013979636" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.009489407771654159" />
-      <entry key="MS500" value="0.47643931211931134" />
-      <entry key="S2" value="1.6888458330125065" />
-      <entry key="S5" value="3.4565215107159166" />
-      <entry key="S10" value="5.72872244963875" />
-      <entry key="S30" value="9.805821132739839" />
-      <entry key="S60" value="11.912452752595922" />
-      <entry key="M2" value="14.832366452621093" />
-      <entry key="M5" value="23.816873183498544" />
-      <entry key="M10" value="35.09813216119773" />
-      <entry key="M15" value="42.95745687657111" />
-      <entry key="M30" value="64.64758239269985" />
-      <entry key="H1" value="116.4763943792809" />
-      <entry key="H2" value="208.165319103298" />
-      <entry key="H4" value="318.74527825036546" />
-      <entry key="D1" value="851.2299045330182" />
-      <entry key="W1" value="1231.1688899953854" />
+      <entry key="MS100" value="0.05593907683247901" />
+      <entry key="MS500" value="0.5868651448923381" />
+      <entry key="S2" value="1.3464556258220495" />
+      <entry key="S5" value="2.0048529339082495" />
+      <entry key="S10" value="2.4180869759702532" />
+      <entry key="S30" value="3.1758088994853817" />
+      <entry key="S60" value="4.0177835960439126" />
+      <entry key="M2" value="5.277454690189069" />
+      <entry key="M5" value="11.241723049419994" />
+      <entry key="M10" value="24.31575001633635" />
+      <entry key="M15" value="35.65131110244551" />
+      <entry key="M30" value="63.11672440587768" />
+      <entry key="H1" value="117.28301527204519" />
+      <entry key="H2" value="211.4453616655304" />
+      <entry key="H4" value="326.84060219335583" />
+      <entry key="D1" value="868.1886933229814" />
+      <entry key="W1" value="1253.7159106524998" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -360,7 +361,7 @@
       <workItem from="1790769634873" duration="75000" />
       <workItem from="1790769713805" duration="16193000" />
       <workItem from="1790844259975" duration="19000" />
-      <workItem from="1790844281801" duration="11533000" />
+      <workItem from="1790844281801" duration="12493000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
       <option name="closed" value="true" />
@@ -530,7 +531,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790859091139</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Refactor pr_runner.py to integrate model training and testing; simplify feature extraction in feature_extractor.py">
+      <option name="closed" value="true" />
+      <created>1790859719759</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1790859719759</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -567,13 +576,14 @@
     <MESSAGE value="Add training and classification functions to pr_training.py and pr_tests.py" />
     <MESSAGE value="Refactor pr_runner.py and enhance testing in pr_tests.py; streamline classification logic and output handling" />
     <MESSAGE value="Add pr_id fields to data functions in pr_data.py for better tracking of pull requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add pr_id fields to data functions in pr_data.py for better tracking of pull requests" />
+    <MESSAGE value="Refactor pr_runner.py to integrate model training and testing; simplify feature extraction in feature_extractor.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor pr_runner.py to integrate model training and testing; simplify feature extraction in feature_extractor.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonProject$pr_tests.coverage" NAME="pr_tests Coverage Results" MODIFIED="1790858413921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pr_tests.coverage" NAME="pr_tests Coverage Results" MODIFIED="1790859907889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$feature_extractor.coverage" NAME="feature_extractor Coverage Results" MODIFIED="1790843701193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1790344984411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790854605364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790859915336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790843538391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790771893715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

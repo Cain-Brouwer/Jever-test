@@ -13,6 +13,7 @@ def test_model(model):
     for pr in test_data:
         added_lines, removed_lines = extract_features(pr)
         features = (added_lines, removed_lines)
+        print(f"Testing PR: {pr['pr_id']}, Features: {features}")
         pr_result = model.predict_proba([features])[:, 1]
         pr_result_float = pr_result[0]
         pr_output = classify_probability(pr_result_float)
