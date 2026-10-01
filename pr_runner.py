@@ -15,8 +15,8 @@ for pr in pr_all:
     features.append((added_lines, removed_lines))
     labels.append(pr["is_merge_conflict"])
 
-print(f"Features: {features}")
-print(f"Labels: {labels}")
+# print(f"Features: {features}")
+# print(f"Labels: {labels}")
 
 model = LogisticRegression()
 model.fit(features, labels)
@@ -24,8 +24,8 @@ model.fit(features, labels)
 resultant = model.predict_proba(features)[:, 1]
 result = list_loop(resultant)
 
-print(resultant)
-print(result)
+# print(resultant)
+# print(result)
 
 new_pr3 = extract_features(pr_data3())
 new_pr4 = extract_features(pr_data4())
@@ -38,3 +38,22 @@ print(pr_result4)
 
 print(model.coef_)
 print(model.intercept_)
+
+actual_label = pr_data3()["is_merge_conflict"]
+
+pr_result3_float = pr_result3[0]
+pr_result4_float = pr_result4[0]
+
+def classify_probability(probability):
+    if probability < 0.5:
+        return False
+    else:
+        return True
+
+pr_output3 = classify_probability(pr_result3_float)
+print(pr_output3)
+
+print(actual_label)
+
+comparison = pr_output3 == actual_label
+print(comparison)
