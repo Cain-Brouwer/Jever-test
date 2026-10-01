@@ -1,6 +1,5 @@
 from feature_extractor import extract_features
 from pr_data import data
-from pr_runner import labels
 
 
 def classify_probability(probability):
