@@ -5,6 +5,7 @@ class data:
     class trainings_data:
         def pr_data1(self):
             pr_data = {
+                "pr_id": "pr1",
                 "code_diffs": """
             diff --git a/login.py b/login.py
             index 1234567..89abcde 100644
@@ -36,6 +37,7 @@ class data:
 
         def pr_data2(self):
             pr_data = {
+                "pr_id": "pr2",
                 "code_diffs": """
         diff --git a/payment.py b/payment.py
         index 4567890..abcdef1 100644
@@ -72,6 +74,7 @@ class data:
 
         def pr_data3(self):
             pr_data = {
+                "pr_id": "pr3",
                 "code_diffs": """
         diff --git a/settings.py b/settings.py
         index 1234567..89abcde 100644
@@ -114,6 +117,7 @@ class data:
     class test_data:
         def pr_data4(self):
             pr_data = {
+                "pr_id": "pr4",
                 "code_diffs": """
         diff --git a/profile.py b/profile.py
         index 1234567..89abcde 100644
@@ -142,6 +146,7 @@ class data:
 
         def pr_data5(self):
             pr_data = {
+                "pr_id":"pr5",
                 "code_diffs": """diff --git a/notifications.py b/notifications.py
         index 1234567..89abcde 100644
         --- a/notifications.py
@@ -163,6 +168,7 @@ class data:
 
         def pr_data6(self):
             pr_data = {
+                "pr_id": "pr6",
                 "code_diffs": """diff --git a/orders.py b/orders.py
         index 1234567..89abcde 100644
         --- a/orders.py
