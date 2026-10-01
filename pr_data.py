@@ -63,3 +63,62 @@ index 4567890..abcdef1 100644
     }
 
     return pr_data
+
+
+def pr_data3():
+    pr_data = {
+        "code_diffs": """
+diff --git a/profile.py b/profile.py
+index 1234567..89abcde 100644
+--- a/profile.py
++++ b/profile.py
+@@ -10,6 +10,10 @@
+ def update_profile(user, data):
++    user.name = data["name"]
++    user.email = data["email"]
++    user.updated_at = datetime.now()
++    save_user(user)
+""",
+        "commit_history": [
+            "Update user profile fields",
+            "Add profile timestamp",
+            "Save profile changes"
+        ],
+        "contributors": [
+            "alice"
+        ],
+        "is_merge_conflict": False
+    }
+
+    return pr_data
+
+
+def pr_data4():
+
+    pr_data = {
+        "code_diffs": """
+diff --git a/settings.py b/settings.py
+index 1234567..89abcde 100644
+--- a/settings.py
++++ b/settings.py
+@@ -20,10 +20,6 @@
+ def update_settings(user, data):
+-    if data["theme"] is None:
+-        data["theme"] = "default"
+-    if data["language"] is None:
+-        data["language"] = "en"
++    user.settings.update(data)
++    save_settings(user)
+""",
+        "commit_history": [
+            "Simplify settings update",
+            "Remove default settings handling",
+            "Update settings persistence"
+        ],
+        "contributors": [
+            "bob"
+        ],
+        "is_merge_conflict": True
+    }
+
+    return pr_data
