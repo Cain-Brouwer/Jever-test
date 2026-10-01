@@ -5,4 +5,5 @@ def run_model():
     trained_model = train_model()
     test_model(trained_model)
 
+
 run_model()
