@@ -12,17 +12,11 @@ for pr in data.training:
     features.append((added_lines, removed_lines))
     labels.append(pr["is_merge_conflict"])
 
-# print(f"Features: {features}")
-# print(f"Labels: {labels}")
-
 model = LogisticRegression()
 model.fit(features, labels)
 
 resultant = model.predict_proba(features)[:, 1]
 result = list_loop(resultant)
-
-# print(resultant)
-# print(result)
 
 new_pr3 = extract_features(data.trainings_data.pr_data3(self=data.trainings_data()))
 new_pr4 = extract_features(data.test_data.pr_data4(self=data.test_data()))
