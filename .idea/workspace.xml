@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Refactor dummy_predicter.py to import pr_data functions; add pr_data.py for structured prediction data">
-      <change afterPath="$PROJECT_DIR$/feature_extractor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rule_based_predicter.py" afterDir="false" />
+    <list default="true" id="59f5299d-d388-4bf8-ab54-b7ccde19e1ba" name="Changes" comment="Add feature_extractor.py for feature extraction; refactor kans_checker.py and dummy_predicter.py for improved validation and data handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dummy_predicter.py" beforeDir="false" afterPath="$PROJECT_DIR$/dummy_predicter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kans_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/kans_checker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pr_runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/pr_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rule_based_predicter.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="5" />
+    <option name="cachedIndexableFilesCount" value="9" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -42,61 +39,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.837601334369348E-136" />
-      <entry key="S2" value="3.4211906902994286E-34" />
-      <entry key="S5" value="1.1387072459091868E-13" />
-      <entry key="S10" value="8.176123227153009E-7" />
-      <entry key="S30" value="0.03612112942594263" />
-      <entry key="S60" value="0.7058865224577494" />
-      <entry key="M2" value="3.719467234058123" />
-      <entry key="M5" value="11.915958873674063" />
-      <entry key="M10" value="20.965242312277823" />
-      <entry key="M15" value="26.836462507559453" />
-      <entry key="M30" value="35.79736198601083" />
-      <entry key="H1" value="42.05751332243989" />
-      <entry key="H2" value="46.38998959691567" />
-      <entry key="H4" value="69.12912663367027" />
-      <entry key="D1" value="483.3675549683725" />
-      <entry key="W1" value="779.7493804510407" />
+      <entry key="MS100" value="2.32830165E-316" />
+      <entry key="MS500" value="7.471500834158681E-64" />
+      <entry key="S2" value="1.6594236958743857E-16" />
+      <entry key="S5" value="5.869240748791603E-7" />
+      <entry key="S10" value="0.001254392659827754" />
+      <entry key="S30" value="0.3118235818695139" />
+      <entry key="S60" value="1.7343504560659908" />
+      <entry key="M2" value="7.6456986458455996" />
+      <entry key="M5" value="32.91590350674692" />
+      <entry key="M10" value="61.94814578486725" />
+      <entry key="M15" value="79.3641949977799" />
+      <entry key="M30" value="105.23964701758976" />
+      <entry key="H1" value="123.41021364900533" />
+      <entry key="H2" value="134.95393357043173" />
+      <entry key="H4" value="160.8910325950561" />
+      <entry key="D1" value="576.5475443028923" />
+      <entry key="W1" value="875.9012479274447" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000003621272302" />
-      <entry key="S5" value="1.0026518226340242" />
-      <entry key="S10" value="1.051495850648614" />
-      <entry key="S30" value="1.3720598650062126" />
-      <entry key="S60" value="1.617465404512339" />
-      <entry key="M2" value="1.9449746980859524" />
-      <entry key="M5" value="3.2702383631822554" />
-      <entry key="M10" value="5.51346842867834" />
-      <entry key="M15" value="7.149708240850468" />
-      <entry key="M30" value="9.754360230634024" />
-      <entry key="H1" value="11.613990127328092" />
-      <entry key="H2" value="12.766056216318653" />
-      <entry key="H4" value="14.394227320161281" />
-      <entry key="D1" value="32.84952637383779" />
-      <entry key="W1" value="45.25936707664483" />
+      <entry key="S2" value="1.0000000389176547" />
+      <entry key="S5" value="1.0010871557242802" />
+      <entry key="S10" value="1.0337331762311717" />
+      <entry key="S30" value="1.4487045696955125" />
+      <entry key="S60" value="2.2050206984607597" />
+      <entry key="M2" value="3.3901241657285293" />
+      <entry key="M5" value="5.399154783114323" />
+      <entry key="M10" value="7.8257276861439475" />
+      <entry key="M15" value="9.806066493075935" />
+      <entry key="M30" value="13.510634204383566" />
+      <entry key="H1" value="16.575113259980792" />
+      <entry key="H2" value="18.612213663879793" />
+      <entry key="H4" value="20.737844026505247" />
+      <entry key="D1" value="39.60756826235232" />
+      <entry key="W1" value="52.21210339011595" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0019262357509635913" />
-      <entry key="MS500" value="0.2863794744949392" />
-      <entry key="S2" value="0.7315358255251044" />
-      <entry key="S5" value="0.8846116451485789" />
-      <entry key="S10" value="0.9857975237751027" />
-      <entry key="S30" value="1.3743562176005863" />
-      <entry key="S60" value="2.2969564216197402" />
-      <entry key="M2" value="5.635260799018279" />
-      <entry key="M5" value="15.153708976507634" />
-      <entry key="M10" value="26.44960869225326" />
-      <entry key="M15" value="33.96115556018944" />
-      <entry key="M30" value="45.53495622006394" />
-      <entry key="H1" value="53.66164411253082" />
-      <entry key="H2" value="59.150661875063946" />
-      <entry key="H4" value="83.52029438247638" />
-      <entry key="D1" value="516.2158035556155" />
-      <entry key="W1" value="825.0084899985568" />
+      <entry key="MS100" value="3.302358312871274E-7" />
+      <entry key="MS500" value="0.0505550842726087" />
+      <entry key="S2" value="0.4741778092551359" />
+      <entry key="S5" value="0.7427464379660882" />
+      <entry key="S10" value="0.8914404125512437" />
+      <entry key="S30" value="1.6875860496727952" />
+      <entry key="S60" value="3.877382561511128" />
+      <entry key="M2" value="10.979039705585315" />
+      <entry key="M5" value="38.26924461406707" />
+      <entry key="M10" value="69.73637532257246" />
+      <entry key="M15" value="89.13780185153705" />
+      <entry key="M30" value="118.72742963939497" />
+      <entry key="H1" value="139.97126418999298" />
+      <entry key="H2" value="153.5582539767785" />
+      <entry key="H4" value="181.62445087478284" />
+      <entry key="D1" value="616.1535921384092" />
+      <entry key="W1" value="928.1130580271672" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -114,7 +111,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.dummy_predicter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dummy_predicter.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.feature_extractor.executor&quot;: &quot;Run&quot;,
     &quot;Python.kans_checker.executor&quot;: &quot;Run&quot;,
     &quot;Python.pr_runner.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
@@ -139,8 +137,8 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="dummy_predicter" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="PythonProject" />
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="pythonproject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,21 +146,183 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.14" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dummy_predicter.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="~/PycharmProjects/PythonProject/.venv" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="true" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.Celery" factoryName="Python.Celery.App">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.Celery" factoryName="Python.Celery.Task">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="pythonproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -192,7 +352,9 @@
       <workItem from="1790768498403" duration="409000" />
       <workItem from="1790768910951" duration="704000" />
       <workItem from="1790769634873" duration="75000" />
-      <workItem from="1790769713805" duration="15426000" />
+      <workItem from="1790769713805" duration="16193000" />
+      <workItem from="1790844259975" duration="19000" />
+      <workItem from="1790844281801" duration="756000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup for IntelliJ project configuration and added dummy predictor script.">
       <option name="closed" value="true" />
@@ -258,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790776519137</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add feature_extractor.py for feature extraction; refactor kans_checker.py and dummy_predicter.py for improved validation and data handling">
+      <option name="closed" value="true" />
+      <created>1790843721244</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1790843721244</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,12 +442,14 @@
     <MESSAGE value="Refactor dummy_predicter.py and kans_checker.py; add pr_runner.py for processing predictions" />
     <MESSAGE value="Refactor kans_checker.py to clean up commented code and improve list_loop function" />
     <MESSAGE value="Refactor dummy_predicter.py to import pr_data functions; add pr_data.py for structured prediction data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor dummy_predicter.py to import pr_data functions; add pr_data.py for structured prediction data" />
+    <MESSAGE value="Add feature_extractor.py for feature extraction; refactor kans_checker.py and dummy_predicter.py for improved validation and data handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add feature_extractor.py for feature extraction; refactor kans_checker.py and dummy_predicter.py for improved validation and data handling" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonProject$feature_extractor.coverage" NAME="feature_extractor Coverage Results" MODIFIED="1790843701193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$test.coverage" NAME="test Coverage Results" MODIFIED="1790344984411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790776504208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790843485611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$pr_runner.coverage" NAME="pr_runner Coverage Results" MODIFIED="1790844890933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$dummy_predicter.coverage" NAME="dummy_predicter Coverage Results" MODIFIED="1790843538391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PythonProject$kans_checker.coverage" NAME="kans_checker Coverage Results" MODIFIED="1790771893715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
