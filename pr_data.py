@@ -122,3 +122,48 @@ index 1234567..89abcde 100644
     }
 
     return pr_data
+
+def pr_data5():
+    pr_data = {
+        "code_diffs": """diff --git a/notifications.py b/notifications.py
+index 1234567..89abcde 100644
+--- a/notifications.py
++++ b/notifications.py
+@@ -15,6 +15,8 @@ def send_notification(user, message):
++    notification = create_notification(user.id, message)
++    save_notification(notification)""",
+        "commit_history": [
+            "Add notification creation",
+            "Save user notification"
+        ],
+        "contributors": [
+            "alice"
+        ],
+        "is_merge_conflict": False
+    }
+    return pr_data
+
+
+def pr_data6():
+    pr_data = {
+        "code_diffs": """diff --git a/orders.py b/orders.py
+index 1234567..89abcde 100644
+--- a/orders.py
++++ b/orders.py
+@@ -30,8 +30,10 @@ def update_order(order, data):
+-    if data["status"] is None:
+-        data["status"] = "pending"
++    order.status = data["status"]
++    order.updated_at = datetime.now()
++    save_order(order)""",
+        "commit_history": [
+            "Simplify order status handling",
+            "Update order timestamp",
+            "Save order changes"
+        ],
+        "contributors": [
+            "charlie"
+        ],
+        "is_merge_conflict": True
+    }
+    return pr_data
