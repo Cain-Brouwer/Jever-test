@@ -99,6 +99,14 @@ class data:
 
             return pr_data
 
+        def verzamel_trainings_data(self):
+            trainings_data = [
+                self.pr_data1(),
+                self.pr_data2(),
+                self.pr_data3()
+            ]
+            return trainings_data
+
     # ___________________________________________________________________________________
     # test data
 
@@ -176,6 +184,14 @@ class data:
                 "is_merge_conflict": True
             }
             return pr_data
+
+        def verzamel_test_data(self):
+            test_data = [
+                self.pr_data4(),
+                self.pr_data5(),
+                self.pr_data6()
+            ]
+            return test_data
 
     training = trainings_data()
     test = test_data()

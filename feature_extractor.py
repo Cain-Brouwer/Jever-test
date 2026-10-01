@@ -1,4 +1,4 @@
-from pr_data import pr_data1
+from pr_data import data
 
 def extract_features(pr_data):
     code_diffs = pr_data["code_diffs"]
@@ -14,4 +14,4 @@ def extract_features(pr_data):
             print(f"Removed line: {diffs[1:]}")
     return added_lines, removed_lines
 
-extract_features(pr_data1())
+extract_features(data.training[0])
