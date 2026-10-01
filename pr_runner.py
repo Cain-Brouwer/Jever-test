@@ -37,32 +37,3 @@ print(model.coef_)
 print(model.intercept_)
 
 actual_label = data.trainings_data.pr_data3(self=data.trainings_data())["is_merge_conflict"]
-
-
-# test gedeelte
-# ____________________________________________________________________________
-
-pr_result3_float = pr_result3[0]
-pr_result4_float = pr_result4[0]
-pr_result5_float = pr_result5[0]
-pr_result6_float = pr_result6[0]
-
-
-def classify_probability(probability):
-    if probability < 0.5:
-        return False
-    else:
-        return True
-
-# def pr_checker(pr):
-#     for pr in
-
-pr_output3 = classify_probability(pr_result3_float)
-pr_output4 = classify_probability(pr_result4_float)
-pr_output5 = classify_probability(pr_result5_float)
-pr_output6 = classify_probability(pr_result6_float)
-
-print(actual_label)
-
-comparison = pr_output3 == actual_label
-print(comparison)
